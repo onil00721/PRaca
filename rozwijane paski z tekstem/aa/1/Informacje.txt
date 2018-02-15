@@ -1,0 +1,34 @@
+font awensome 
+google fonts 
+slick
+pixabay 
+
+current- clasa dodawana do aktualnego odnośnika na stronie 
+działa to przy jq one page nawigation
+
+
+jq one page nav 
+wow js
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_collapsible_accordion&stacked=h
+
+
+linki do sprawdzenia
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_check
+
+https://www.w3schools.com/js/js_validation_api.asp
+
+http://shebang.pl/artykuly/element-input/#date
+
+http://shebang.pl/artykuly/formularze-html5/
+
+
+input patern
+
+1680 x 900
+
+1280x 1024
+
+1024x 768
+
+800x 600

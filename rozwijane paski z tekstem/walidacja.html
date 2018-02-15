@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+
+<p id="demo">Visit Microsoft!</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+    
+function myFunction() {
+    
+    
+        
+  $( "button" ).click(function() {
+  $( this ).replaceWith( "<p>" + $( this ).text() + "</p>" );
+});
+    /*var str = document.getElementById("demo").innerHTML; 
+    var res = str.replace("Microsoft", "W3Schools");
+    document.getElementById("demo").innerHTML = res;*/
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>val demo</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<p>Type something and then click or tab out of the input.</p>
+<input type="text" value="type something">
+ 
+<script>
+$( "input" ).on( "blur", function() {
+  $( this ).val(function( i, val ) {
+    return val.replace("XXXXXXXXXX","rewr");
+  });
+});
+</script>
+ 
+</body>
+</html>

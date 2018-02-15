@@ -1,0 +1,30 @@
+ 
+<input type="text" value=" text" >
+
+<input type="text" value="some text" id="dwdw">
+<p></p>
+ 
+<script>
+  
+    
+    //odczytuje z inputa 
+$( "input" )
+  .keyup(function() {
+    var value = $( this ).val();
+    //$( "p" ).text( value );
+         
+    //var text = value;
+  $( "#dwdw" ).val( value );
+
+  })
+  .keyup();
+    
+    
+    
+    
+    
+    
+</script>
+ 
+</body>
+</html>

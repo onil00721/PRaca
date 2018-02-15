@@ -1,0 +1,96 @@
+wlejenie wartości do inputa 
+
+$( "button" ).click(function() {
+  var text = $( "#jed" ).text();
+  $( "input" ).val( text );
+});
+
+
+
+odczytanie wartoci inputa 
+
+
+$( "input" )s
+  .keyup(function() {
+    var value = $( this ).val();
+    $( "p" ).text( value );
+  })
+  .keyup();
+  
+  
+  
+  
+  
+  
+  
+  <script>
+  /*  
+    //wkleja do inputa 
+    $( "button" ).click(function() {
+  var text = $( this ).text();
+  $( "#dwdw" ).val( text );
+      
+});*/var y=0 
+    var i=0;
+    var tab=[];
+    //odczytuje z inputa 
+$( "input" ).keyup(function() {
+    var value = $( this ).val();
+   
+  
+    
+    if(value>9&& value< 99){
+       // console.log(">9");
+         console.log(value+"-");
+         i = value + "-";
+        tab[0]=i;
+    }
+    
+    else if(value>99 && value<999){
+        console.log(i.substring(0, 3));
+        
+        console.log(i + (i.substring(4,5)));
+        console.log(i+"els"+value);
+    }
+   // console.log(i+"out");
+    
+  //  console.log(value);
+ 
+ 
+ 
+  // console.log(i.substring(0, 3)); //Ala
+    
+    /*if(i===0){
+           console.log(tab+"wynik 1 z tablicy");
+    }
+    
+    else if(i===1){
+           console.log(tab+"wynik 2 z tablicy");
+    }
+    
+    else if(i===2){
+           console.log(tab[0]+tab[1]+"-"+tab[2]+"wynik 3 z tablicy");
+    }
+    else if(i===3){
+           console.log(tab[0]+tab[1]+"-"+tab[2]+tab[3]+"wynik 4 z tablicy");
+    }
+    else if(i===4){
+           console.log(tab[0]+tab[1]+"-"+tab[2]+tab[3]+tab[4]+"wynik 5 z tablicy");
+        i=0;
+    }*/
+//    console.log(tab[i]);
+    //console.log(i+"to i");
+    
+         
+    
+  $( "#dwdw" ).val( value );
+
+  })
+  .keyup();
+    
+    
+    
+    
+    
+    
+</script>

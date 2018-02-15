@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="" dir="">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <?= bloginfo('name'); ?>
+    </title>
+    <?= wp_head(); ?>
+
+        <!-- http://realfavicongenerator.net -->
+        <link rel="apple-touch-icon" sizes="57x57" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?= bloginfo('template_url'); ?>/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="<?= bloginfo('template_url'); ?>/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="<?= bloginfo('template_url'); ?>/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="<?= bloginfo('template_url'); ?>/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="<?= bloginfo('template_url'); ?>/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="<?= bloginfo('template_url'); ?>/favicons/manifest.json">
+        <link rel="mask-icon" href="<?= bloginfo('template_url'); ?>/favicons/safari-pinned-tab.svg" color="#337ab7">
+        <link rel="shortcut icon" href="<?= bloginfo('template_url'); ?>/favicons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="<?= bloginfo('name'); ?>">
+        <meta name="application-name" content="<?= bloginfo('name'); ?>">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="msapplication-TileImage" content="<?= bloginfo('template_url'); ?>/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="<?= bloginfo('template_url'); ?>/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#337ab7">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="<?= bloginfo('template_url'); ?>/assets/javascripts/html5shiv.min.js"></script>
+<script src="<?= bloginfo('template_url'); ?>/assets/javascripts/respond.min.js"></script>
+<script src="<?= bloginfo('template_url'); ?>/assets/javascripts/selectivizr.js"></script>
+<![endif]-->
+
+        <link rel="stylesheet" href="<?= bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+
+        <!-- load font awesome stylesheets-->
+        <link rel="stylesheet" type="text/css" href="<?= bloginfo('template_url'); ?>/assets/stylesheets/font-awesome.css" />
+
+        <link rel="stylesheet" type="text/css" href="<?= bloginfo('template_url'); ?>/assets/stylesheets/slick.css" />
+        <!-- load general style -->
+        <link rel="stylesheet" type="text/css" href="<?= bloginfo('template_url'); ?>/stylesheets/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="<?= bloginfo('template_url'); ?>/javascripts/main-dist.js"></script>
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-start " id="topLogo"><img src="<?= bloginfo('template_url'); ?>/images/avon.png" alt=""></div>
+    </div>
+    <div class="container-fluid" id="headerContainer">
+       
+            <div class="hedContainer">
+           
+           
+             <div class="myButton"> Home</div>
+                      
+                <div class="myButton">Zostañ konsultantk¹</div>
+               
+                      
+                <div class="myButton">Z³ó¿ zamówienie</div>
+          
+           
+             <div class="myButton">Kontakt</div>
+
+
+                   </div></div>
+                   
+                   
+                
+   
+
+    <!--
+
+    <div class="container">
+        <div class="d-flex justify-content-start " id="topLogo"><img src="<?= bloginfo('template_url'); ?>/images/avon.png" alt=""></div>
+    </div>
+    <div class="container d-flex flex-row-reverse" id="">
+
+        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+            <label class="btn btn-secondary active  btn-lg ">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Home
+  </label>
+
+            <label class="btn btn-secondary  btn-lg">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Zostan konsultantka
+  </label>
+
+            <label class="btn btn-secondary  btn-lg">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Z³ó¿ azamówienie
+  </label>
+
+            <label class="btn btn-secondary  btn-lg">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Kontakt
+  </label>
+        </div>
+
+
+    </div>
+
+
+   
+   
+   -->
+
+
+
+
+
+
+
+
+
+    <main>
+        <article>
+            <section>
+                <!-- slider ------------------>
+
+                <div class="container-fluid PhotoSize">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <!-- <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/image_nodes/winter-solstice.jpg?itok=Pvf11DFE" alt="First slide">
+
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Zdjaêcie 1</h3>
+                                    <p>Opis zdjêcia 1</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/image_nodes/winter-solstice.jpg?itok=Pvf11DFE" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Zdjaêcie 2</h3>
+                                    <p>Opis zdjêcia 2</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/image_nodes/winter-solstice.jpg?itok=Pvf11DFE" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Zdjaêcie 3</h3>
+                                    <p>Opis zdjêcia 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+
+            <section>
+                <div class="container">
+                    <div class="d-flex justify-content-center" id="formTitle">
+                        <div class="headerTwo">
+                            Zostañ konsultantk¹
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+
+
+                    <?php  echo do_shortcode('[contact-form-7 id="32" title="Formularz 1"]');?>
+
+                </div>
+
+
+                <!-- ZASADY WSPÓ£PRACY ----------------------------- -->
+
+                <div class="container">
+                    <div id="jeden">
+
+                        <div class="jejeje">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam t a
+
+                            <div class="dadada">
+
+                                <br>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis unde, aperiam rem quasi, esse quos expedita optio nisi impedit alias dolore culpa architecto, in molestias sunt incidunt saepe beatae sapiente?</div>
+                                <div>Id voluptas, impedit adipisci aliquam tempore quaerat quibusdam ratione quasi sint, harum fugit, incidunt! Voluptatem placeat saepe voluptas, obcaecati rem eaque, quisquam a aut explicabo distinctio aspernatur accusantium, perspiciatis sed!</div>
+                                <div>Tempora maiores quos ipsam deleniti eum temporibus reiciendis placeat, assumenda voluptatum iste. Nobis ullam nostrum, odit doloribus ipsa quibusdam explicabo assumenda omnis suscipit dignissimos, inventore aut quia dolores. Ea, animi.</div>
+                                <div>Magni debitis voluptates architecto ullam, recusandae eius unde, consequatur sequi natus blanditiis. In facilis similique pariatur unde magni consectetur labore repudiandae, possimus hic expedita neque, non assumenda velit blanditiis iste!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container">
+                    <div id="dwa">
+
+                        <div class="jejeje">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam t a
+
+                            <div class="dadada">
+
+                                <br>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis unde, aperiam rem quasi, esse quos expedita optio nisi impedit alias dolore culpa architecto, in molestias sunt incidunt saepe beatae sapiente?</div>
+                                <div>Id voluptas, impedit adipisci aliquam tempore quaerat quibusdam ratione quasi sint, harum fugit, incidunt! Voluptatem placeat saepe voluptas, obcaecati rem eaque, quisquam a aut explicabo distinctio aspernatur accusantium, perspiciatis sed!</div>
+                                <div>Tempora maiores quos ipsam deleniti eum temporibus reiciendis placeat, assumenda voluptatum iste. Nobis ullam nostrum, odit doloribus ipsa quibusdam explicabo assumenda omnis suscipit dignissimos, inventore aut quia dolores. Ea, animi.</div>
+                                <div>Magni debitis voluptates architecto ullam, recusandae eius unde, consequatur sequi natus blanditiis. In facilis similique pariatur unde magni consectetur labore repudiandae, possimus hic expedita neque, non assumenda velit blanditiis iste!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container">
+                    <div id="trzy">
+
+                        <div class="jejeje">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam t a
+
+                            <div class="dadada">
+
+                                <br>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis unde, aperiam rem quasi, esse quos expedita optio nisi impedit alias dolore culpa architecto, in molestias sunt incidunt saepe beatae sapiente?</div>
+                                <div>Id voluptas, impedit adipisci aliquam tempore quaerat quibusdam ratione quasi sint, harum fugit, incidunt! Voluptatem placeat saepe voluptas, obcaecati rem eaque, quisquam a aut explicabo distinctio aspernatur accusantium, perspiciatis sed!</div>
+                                <div>Tempora maiores quos ipsam deleniti eum temporibus reiciendis placeat, assumenda voluptatum iste. Nobis ullam nostrum, odit doloribus ipsa quibusdam explicabo assumenda omnis suscipit dignissimos, inventore aut quia dolores. Ea, animi.</div>
+                                <div>Magni debitis voluptates architecto ullam, recusandae eius unde, consequatur sequi natus blanditiis. In facilis similique pariatur unde magni consectetur labore repudiandae, possimus hic expedita neque, non assumenda velit blanditiis iste!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="container">
+                    <div id="cztery">
+
+                        <div class="jejeje">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam t a
+
+                            <div class="dadada">
+
+                                <br>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis unde, aperiam rem quasi, esse quos expedita optio nisi impedit alias dolore culpa architecto, in molestias sunt incidunt saepe beatae sapiente?</div>
+                                <div>Id voluptas, impedit adipisci aliquam tempore quaerat quibusdam ratione quasi sint, harum fugit, incidunt! Voluptatem placeat saepe voluptas, obcaecati rem eaque, quisquam a aut explicabo distinctio aspernatur accusantium, perspiciatis sed!</div>
+                                <div>Tempora maiores quos ipsam deleniti eum temporibus reiciendis placeat, assumenda voluptatum iste. Nobis ullam nostrum, odit doloribus ipsa quibusdam explicabo assumenda omnis suscipit dignissimos, inventore aut quia dolores. Ea, animi.</div>
+                                <div>Magni debitis voluptates architecto ullam, recusandae eius unde, consequatur sequi natus blanditiis. In facilis similique pariatur unde magni consectetur labore repudiandae, possimus hic expedita neque, non assumenda velit blanditiis iste!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<script>
+                
+function show(a){
+     $(a+" .dadada").css({
+        "font-size": '2vw'
+    });
+}
+
+function hide(a){
+     $(a +" .dadada").css({
+        "font-size": '0vw'
+    });
+}
+
+
+
+
+$("#jeden").mouseenter(function(){show("#jeden");})
+$("#jeden").mouseleave(function(){hide("#jeden");})
+
+$("#dwa").mouseenter(function(){show("#dwa");})
+$("#dwa").mouseleave(function(){hide("#dwa");})
+
+
+$("#trzy").mouseenter(function(){show("#trzy");})
+$("#trzy").mouseleave(function(){hide("#trzy");})
+
+$("#cztery").mouseenter(function(){show("#cztery");})
+$("#cztery").mouseleave(function(){hide("#cztery");})
+                </script>
+
+
+
+
+                <!-- KATALOGI ----------------------->
+                <section>
+                    <div class="d-flex justify-content-center" id="formTitle">
+                        <div class="headerTwo">
+                            Zapoznaj siê ofert¹
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row  okladka  ">
+                            <div class="col-md-4 d-flex justify-content-center okladkaMargin"><img src="<?= bloginfo('template_url'); ?>/images/okladka(1).jpg" alt="KATALOG"> </div>
+                            <div class="col-md-4 d-flex justify-content-center okladkaMargin"><img src="<?= bloginfo('template_url'); ?>/images/okladka(3).jpg" alt="KATALOG"> </div>
+                            <div class="col-md-4 d-flex justify-content-center okladkaMargin"><img src="<?= bloginfo('template_url'); ?>/images/okladka(1).jpg" alt="KATALOG"> </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
+        </article>
+    </main>
+    <fotter>
+        <div class="d-flex justify-content-center" id="formTitle">
+            <div class="headerTwo">
+                Zkontaktuj siê z nami
+            </div>
+        </div>
+
+        <div class="container">
+
+        </div>
+
+
+        <div class="container fotterBorder">
+            <div class="d-flex justify-content-center" id="formTitle">
+                Tel. 801-802-803
+            </div>
+            <div class="d-flex justify-content-center" id="formTitle">
+                7 Dni w tygodniu od godziny 9.00 do 17.00
+            </div>
+
+
+
+
+        </div>
+
+        <div class="container justify-content-center ">
+            <p> &copy; 2018.02 Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </p>
+        </div>
+
+
+
+
+    </fotter>
+    <header>
+
+        <script src="javascripts/newjavascript.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </header>

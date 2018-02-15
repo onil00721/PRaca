@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript"> 
+function sprawdz(f){
+var tab=new Array();
+tab=f.kod.value.split('-');
+if(tab.length!=2||tab[0].length!=2||tab[0]<0||tab[0]>99||tab[1].length!=3||tab[1]<0||tab[1]>999){f.kod.value='niewlasciwy kod';return false}
+}
+</script> 
+</head>
+<body>
+<form onSubmit='return sprawdz(this)'> 
+<input type="text" name="kod"> 
+<input type="submit" value="Wyslij"> 
+</form> 
+</body>
+
+
+

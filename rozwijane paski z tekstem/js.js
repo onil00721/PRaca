@@ -1,0 +1,28 @@
+var i = 0;
+
+$("input").keyup(function () {
+    var value = $(this).val();
+    $("#dwdw").val(value);
+
+
+
+    if (value > 9 && value <= 99) {
+        console.log(value + "-");
+        i = value + "-";
+        $("#dwdw").val(value + "-");
+    } else if (value > 99 && value < 999) {
+        console.log(i + "" + value.substring(2, 3));
+        $("#dwdw").val(i + "" + value.substring(2, 3));
+
+    } else if (value > 999 && value < 9999) {
+        console.log(i + "" + value.substring(2, 4));
+        $("#dwdw").val(i + "" + value.substring(2, 4));
+    } else if (value > 9999 && value < 99999) {
+        console.log(i + "" + value.substring(2, 5));
+
+        $("#dwdw").val(i + "" + value.substring(2, 5));
+
+    } 
+
+
+})
